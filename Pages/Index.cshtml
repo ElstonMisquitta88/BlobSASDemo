@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@{
+
+    foreach (var item in Model.LstBlobContents)
+    {
+        <p>
+        <img src=@item width="200" height="150">
+        </p>
+    }
+}
